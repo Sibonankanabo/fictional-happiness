@@ -4,6 +4,11 @@ from mysql.connector import Error
 import pandas as pd
 from magicbox import train_model as tr
 
+st.set_page_config(
+    page_title="CMLTB",
+    page_icon="😁",
+)
+
 # Function to connect to MySQL database and fetch joined data
 def fetch_joined_data():
     try:

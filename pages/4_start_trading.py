@@ -6,6 +6,10 @@ from magicbox import train_model as tr
 from magicbox import trade_bot as tb
 from magicbox import patamu as pt
 
+st.set_page_config(
+    page_title="CMLTB",
+    page_icon="😁",
+)
 # Function to connect to MySQL database and fetch joined data
 def fetch_joined_data():
     try:

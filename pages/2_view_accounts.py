@@ -3,6 +3,10 @@ import mysql.connector
 from mysql.connector import Error
 import pandas as pd
 
+st.set_page_config(
+    page_title="CMLTB",
+    page_icon="😁",
+)
 # Function to connect to MySQL database and fetch data
 def fetch_data():
     try:

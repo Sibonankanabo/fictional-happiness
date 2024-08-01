@@ -3,6 +3,10 @@ import MetaTrader5 as mt5
 import mysql.connector
 from mysql.connector import Error
 
+st.set_page_config(
+    page_title="CMLTB",
+    page_icon="😁",
+)
 # Function to get symbols from MetaTrader5
 def get_symbols():
     # Initialize MetaTrader5 and login

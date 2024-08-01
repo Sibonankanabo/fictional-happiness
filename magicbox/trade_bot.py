@@ -9,6 +9,7 @@ import mysql.connector
 from mysql.connector import Error
 import streamlit as st
 import matplotlib.pyplot as plt
+from magicbox import stop_loss as stpl
 
 def traderbot(login_id, server, password, symbol, lot_size, risk_percentage):
     TIMEFRAME = mt5.TIMEFRAME_M15
@@ -174,7 +175,9 @@ def traderbot(login_id, server, password, symbol, lot_size, risk_percentage):
 
             # Sleep for a while before the next iteration (e.g., 60 minutes)
             time.sleep(60 * 60)
-
+            time_to_next = stpl.stoploss(login_id, server, password, symbol)
+            
+            st.write(time_to_next)
     except Exception as e:
         print("Error occurred:", e)
 
