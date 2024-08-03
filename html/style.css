@@ -1,0 +1,35 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('pexels-weekendplayer-186461.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+h2, h3 {
+    color: #00ccff;
+}
+
+.lead, p {
+    color: #b0b0b0;
+}
